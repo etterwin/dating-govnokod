@@ -1,0 +1,213 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../assets/jpg/karta.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.overlay-hidden {
+  opacity: 0; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  animation: flagAction .3s ease-in-out forwards; }
+
+/*Основной блок*/
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2; }
+  @media screen and (max-width: 410px) {
+    .wrapper {
+      padding: 0 10px; } }
+
+/*Скрытые по умолчанию блоки*/
+.modal__hidden {
+  display: none; }
+
+/*Стили для модальных окон*/
+.modal__container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 400px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: flagAction .3s ease-in-out forwards; }
+
+.modal-caption {
+  font-size: 32px;
+  font-weight: 700;
+  color: #343434;
+  cursor: default; }
+
+.modal-text {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: #2ab200;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .modal-text:last-child {
+    margin: 0; }
+  .modal-text:hover {
+    text-shadow: 0 0 10px white; }
+
+/*Стили для отметок на карте*/
+.flag__hidden {
+  display: none; }
+
+.flag__container {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  opacity: 0;
+  animation: flagAction .3s ease-in-out forwards; }
+
+@keyframes flagAction {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  cursor: pointer; }
+  .box:first-child {
+    top: 100px;
+    left: 40%; }
+  .box:nth-child(2) {
+    top: 40%;
+    right: 40%; }
+  .box:nth-child(3) {
+    bottom: 20%;
+    right: 15%; }
+  .box:nth-child(4) {
+    bottom: 30%;
+    left: 45%; }
+  .box:nth-child(5) {
+    top: 24%;
+    left: 20%; }
+  .box:nth-child(6) {
+    top: 50%;
+    left: 60%; }
+  .box:last-child {
+    bottom: 46%;
+    right: 60%; }
+
+/*Продолжение карнавала, стили для завершающего окна*/
+.first-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/1.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.second-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/2.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.third-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/3.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.fourth-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/4.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.fifth-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/5.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.sixth-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/6.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+.seventh-girl {
+  max-width: 241px;
+  width: 100%;
+  max-height: 334px;
+  height: 100%;
+  cursor: pointer;
+  background: url("../assets/jpg/7.jpg") no-repeat 50% 50%;
+  background-size: cover; }
+
+/*А этот появится в последнюю очередь после бездействия 3х минут*/
+.modal-btn {
+  max-width: 300px;
+  width: 100%;
+  background: #2ab200;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .modal-btn:hover {
+    text-shadow: 0 0 10px white; }
+
+/*# sourceMappingURL=style.css.map */

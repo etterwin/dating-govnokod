@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Dating - search map</title>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- scripts -->
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<div id="overlay" class="overlay-hidden"></div>
+
+<div class="wrapper">
+
+    <section id="modal_1" class="modal__container">
+        <h1 class="modal-caption">How old are you?</h1>
+        <p class="modal-text" onclick="openSecond(this)">18-24</p>
+        <p class="modal-text" onclick="openSecond(this)">24+</p>
+    </section>
+
+    <section id="modal_2" class="modal__hidden">
+        <h1 class="modal-caption">Who are you looking for?</h1>
+        <p class="modal-text" onclick="openThird(this)">Boy</p>
+        <p class="modal-text" onclick="openThird(this)">Girl</p>
+    </section>
+
+    <section id="flags" class="flag__hidden">
+
+        <div class="box" onclick="first(this)">
+            <img src="assets/png/1.png" class="box-img" />
+        </div>
+
+        <div class="box" onclick="second(this)">
+            <img src="assets/png/2.png" class="box-img" />
+        </div>
+
+        <div class="box" onclick="third(this)">
+            <img src="assets/png/3.png" class="box-img" />
+        </div>
+
+        <div class="box" onclick="fourth(this)">
+            <img src="assets/png/4.png" class="box-img" />
+        </div>
+
+        <div class="box" onclick="fifth(this)">
+            <img src="assets/png/5.png" class="box-img" />
+        </div>
+
+        <div class="box" onclick="sixth(this)">
+            <img src="assets/png/6.png" class="box-img" />
+        </div>
+
+        <div class="box" onclick="seventh(this)">
+            <img src="assets/png/7.png" class="box-img" />
+        </div>
+
+    </section>
+
+    <section id="modal_3" class="modal__hidden" onclick="openSite(this)"> </section>
+
+    <section id="modal_4" class="modal__hidden">
+        <h3 class="modal-caption">Girls are waiting you!</h3>
+        <a onclick="openSite(this)" class="modal-btn">Free registration</a>
+    </section>
+
+</div>
+
+</body>
+</html>
